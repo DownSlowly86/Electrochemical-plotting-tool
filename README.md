@@ -64,3 +64,19 @@ python -m pip install pillow
 ```text
 https://github.com/DownSlowly86/Electrochemical-plotting-tool
 ```
+
+## 发布新版本
+
+仓库已配置 GitHub Actions 发布流程：`.github/workflows/release.yml`。
+
+后续需要发布新版本时，可以在 GitHub 仓库页面进入 `Actions`，选择 `Release`，点击 `Run workflow`，输入版本号，例如 `v0.3.0`。流程会自动打包桌面应用，并在 GitHub 的 `Releases` 页面创建一个新版本。
+
+也可以通过推送 `v*` 格式的标签触发发布，例如 `v0.3.0`。
+
+Release 附件会包含：
+
+- `desktop_app_v0_2.py`
+- `desktop_app.py`
+- `run_desktop_app.ps1`
+- `README.md`
+- `examples/` 示例数据
