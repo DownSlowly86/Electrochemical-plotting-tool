@@ -24,4 +24,8 @@ if (-not $python) {
   throw "No usable Python with tkinter and Pillow was found."
 }
 
-& $python desktop_app.py
+if (Test-Path -LiteralPath ".\desktop_app_v0_2.py") {
+  & $python desktop_app_v0_2.py
+} else {
+  & $python desktop_app.py
+}
