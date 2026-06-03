@@ -4,6 +4,7 @@ __pycache__/
 *.log
 *.tmp
 examples/*.png
+examples/*.svg
 dist/
 build/
 *.spec
